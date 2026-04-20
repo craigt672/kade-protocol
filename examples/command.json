@@ -1,0 +1,11 @@
+{
+  "source": "user.cli",
+  "type": "command",
+  "label": "status_check",
+  "timestamp": "2026-04-20T14:23:10.000Z",
+  "meta": {
+    "text": "what's going on in the workshop",
+    "channel": "cli",
+    "user_id": "craig"
+  }
+}

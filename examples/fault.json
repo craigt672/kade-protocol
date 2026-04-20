@@ -1,0 +1,11 @@
+{
+  "source": "device.puck.kitchen",
+  "type": "fault",
+  "label": "heartbeat_loss",
+  "zone": "kitchen",
+  "timestamp": "2026-04-20T14:24:00.000Z",
+  "meta": {
+    "last_seen": "2026-04-20T14:22:45.000Z",
+    "missed_intervals": 3
+  }
+}

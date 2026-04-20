@@ -1,0 +1,13 @@
+{
+  "source": "yolo.cam01",
+  "type": "detection",
+  "label": "person",
+  "confidence": 0.92,
+  "zone": "entryway",
+  "timestamp": "2026-04-20T14:23:05.231Z",
+  "meta": {
+    "bbox": [421, 188, 612, 742],
+    "frame_id": 18452,
+    "model_version": "yolov8n"
+  }
+}

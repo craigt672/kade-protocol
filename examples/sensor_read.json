@@ -1,0 +1,11 @@
+{
+  "source": "ble.motion.hallway",
+  "type": "sensor_read",
+  "label": "motion",
+  "zone": "hallway",
+  "timestamp": "2026-04-20T14:23:07.104Z",
+  "meta": {
+    "rssi": -62,
+    "battery_pct": 87
+  }
+}

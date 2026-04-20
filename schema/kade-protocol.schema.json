@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/craigt672/kade-protocol/schema/kade-protocol.schema.json",
+  "title": "KADE Protocol Event",
+  "description": "Structured event envelope for IoT devices, perception models, and agentic systems.",
+  "type": "object",
+  "required": ["source", "type", "label", "timestamp"],
+  "additionalProperties": false,
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "Identifier for the emitter. Convention: <model>.<instance> or <sensor>.<id>.",
+      "minLength": 1,
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "type": {
+      "type": "string",
+      "description": "High-level event category (e.g. detection, sensor_read, command, fault, heartbeat).",
+      "minLength": 1
+    },
+    "label": {
+      "type": "string",
+      "description": "Specific event name within the type.",
+      "minLength": 1
+    },
+    "confidence": {
+      "type": "number",
+      "description": "Probability in [0, 1] for stochastic sources. Omit for deterministic sensors.",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "zone": {
+      "type": "string",
+      "description": "Logical location. Decouples events from physical device identity."
+    },
+    "timestamp": {
+      "type": "string",
+      "description": "ISO 8601 UTC timestamp.",
+      "format": "date-time"
+    },
+    "meta": {
+      "type": "object",
+      "description": "Free-form source-specific data. Consumers ignore unknown fields."
+    }
+  }
+}
